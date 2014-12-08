@@ -5,19 +5,17 @@ int main(int agrc, char** argv)
 {
 	int nbrUser;
 	int nbrMystere = 5;
+	int nbrEssaie = 3;
 
 	cout << "Bienvenu dans le jeu Nombre Mystere!!!\n";
-	cout << "Entrez un nombre entre 0 et 10: ";
-	cin >> nbrUser;
-	//Teste si le nombre entré par l'utilisateur est semblable au nombre mystère
-	if (nbrUser == nbrMystere)
+	//Boucle du jeu
+	do
 	{
-		cout << "Bravo tu as trouver le nombre mystère!!!\n";
-	}
-	else
-	{
-		cout << "Meilleure chance la prochaine fois\n";
-	}
+		cout << "Entrez un nombre entre 0 et 10: ";
+		cin >> nbrUser;
+		nbrEssaie--;
+	} while (nbrUser != nbrMystere && nbrEssaie != 0);
+
 	system("pause");
 	return 0;
 }
