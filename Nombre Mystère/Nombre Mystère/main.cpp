@@ -3,6 +3,7 @@ using namespace std;
 
 int main(int agrc, char** argv)
 {
+	//Variables 
 	int nbrUser;
 	int nbrMystere = 5;
 	int nbrEssaie = 3;
